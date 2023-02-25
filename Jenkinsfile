@@ -10,7 +10,7 @@ pipeline {
         PRODUCTION = "chocoapp-prod"
         DOCKERHUB_ID = "geo202"
         DOCKERHUB_PASSWORD = credentials('dockerhub_password')
-        APP_NAME = "ulrich"
+        APP_NAME = "GEOFFROY"
         STG_API_ENDPOINT = "ip10-0-5-3-cfsksoiikvfgqgfmguog-1993.direct.docker.labs.eazytraining.fr"
         STG_APP_ENDPOINT = "ip10-0-5-3-cfsksoiikvfgqgfmguog-80.direct.docker.labs.eazytraining.fr"
         PROD_API_ENDPOINT = "ip10-0-5-4-cfsksoiikvfgqgfmguog-1993.direct.docker.labs.eazytraining.fr"
@@ -106,10 +106,10 @@ pipeline {
   }
   post {
        success {
-         slackSend (color: '#00FF00', message: "GEOFFROY - SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL}) - PROD URL => http://${PROD_APP_ENDPOINT} , STAGING URL => http://${STG_APP_ENDPOINT}")
+         slackSend (color: '#00FF00', message: "ULRICH - SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL}) - PROD URL => http://${PROD_APP_ENDPOINT} , STAGING URL => http://${STG_APP_ENDPOINT}")
          }
       failure {
-            slackSend (color: '#FF0000', message: "GEOFFROY - FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+            slackSend (color: '#FF0000', message: "ULRICH - FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
           }   
     }  
 }
