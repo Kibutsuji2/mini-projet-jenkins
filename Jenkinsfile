@@ -10,7 +10,7 @@ pipeline {
         PRODUCTION = "chocoapp-prod"
         DOCKERHUB_ID = "geo202"
         DOCKERHUB_PASSWORD = credentials('dockerhub_password')
-        APP_NAME = "GEOFFROY"
+        APP_NAME = "ulrich"
         STG_API_ENDPOINT = "ip10-0-5-3-cfsksoiikvfgqgfmguog-1993.direct.docker.labs.eazytraining.fr"
         STG_APP_ENDPOINT = "ip10-0-5-3-cfsksoiikvfgqgfmguog-80.direct.docker.labs.eazytraining.fr"
         PROD_API_ENDPOINT = "ip10-0-5-4-cfsksoiikvfgqgfmguog-1993.direct.docker.labs.eazytraining.fr"
